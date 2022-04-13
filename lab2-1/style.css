@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: grey;
+}
+header{
+   margin-left: 200px;
+   width: 1500px;
+   height: 180px;
+   background: rgb(32, 145, 56);
+}
+h1, h2{
+    color: #fff;
+    text-align: center;
+}
+header h1{
+    padding: 20px;
+    font-size: 3em;
+}
+header h2{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+.menu{
+    width: 1500px;
+    height: 50px;
+    margin-left: 200px;
+    background: black;
+    cursor: pointer;
+}
+a{
+    margin-top: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    float: left;
+    padding: 8px 18px;
+    border-radius: 30px;
+}
+.signign{
+    float: right;
+}
+.menu a:hover{
+    background: greenyellow;
+    color: black;
+}
+.main{
+    width: 1500px;
+    margin-left: 200px;
+    height: 1550px;
+    background: purple;
+    color: #fff;
+}
+.content{
+    float: left;
+    margin: 20px;
+    padding: 0px 10px;
+}
+.content li{
+    list-style: none;
+    line-height: 2em;
+}
+.content p{
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+.content img{
+    margin-top: 10px;
+    width: 900px;
+    height: 500px;
+}
+.content .back-end{
+    margin-top: 120px;
+}
+.sidebar{
+    float: right;
+    width: 500px;
+    background: orange;
+    height: 1550px;
+}
+.sidebar h2{
+    text-align: left;
+    padding: 5px 25px;
+    font-size: 2em;
+    margin-top: 20px;
+}
+.sidebar img{
+    width: 440px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.sidebar p{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 1.65em;
+    line-height: 1.3em;
+}
+.sidebar .context{
+    margin-top: 80px;
+}
+.context img{
+    width: 400px;
+    height: 180px;
+}
+.sci{
+    margin-top: 130px;
+}
+.sci img{
+    width: 250px;
+    height: 100px;
+    background: #fff;
+}
+.sci p{
+    margin-top: 20px;
+}
+footer{
+    margin-left: 200px;
+    width: 1500px;
+    background: #4b58c981;
+    height: 55px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+footer p{
+    padding: 10px;
+}
