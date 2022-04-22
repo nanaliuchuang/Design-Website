@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #FFFF99;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+header .logo{
+    width: 1500px;
+    height: 500px;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: #404040 10px 10px 10px;
+}
+.menu{
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-bottom: 5px solid #fff;
+    border-top: 5px solid #fff;
+    width: 1480px;
+}
+.menu a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.menu a:hover{
+    background: #333;
+    color: #fff;
+    border-radius: 30px;
+}
+.introduce{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px #404040;
+    width: 1460px;
+}
+main{
+    background: #fff;
+    width: 1500px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px #404040;
+
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 260px;
+    height: 200px;
+}
+.weight, .cardio, .personal{
+    width: 1460px;
+    padding: 30px;
+}
+.weight .textBox, .cardio .textBox, .personal .textBox{
+    float: right;
+    width: 1170px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.weight .textBox ul, .cardio .textBox ul, .personal .textBox ul{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+dl{
+    font-weight: bold;
+}
+.common{
+    padding: 50px;
+}
+.common p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.common dd{
+    margin-left: 30px;
+}
+.information{
+    margin-top: 10px;
+}
+button{
+    width: 100px;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: #000;
+    color: #fff;
+}
+footer{
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 20px;
+}
