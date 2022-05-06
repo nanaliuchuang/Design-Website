@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <header>
+        <ul id="navigation">
+            <li id="active"><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Bài viết</a></li>
+            <li><a href="#">Liên lạc</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Tìm kiếm">
+            <i class="fa fa-search"></i>
+        </div>
+    </header>
+    <div class="content">
+        <h2>Ví dụ thao tác Javascript với HTML, CSS</h2>
+        <p>Nội dung đang cập nhật</p>
+        <button class="signin" onclick="toggleForm();">Đăng nhập</button>
+    </div>
+    <section>
+        <div class="user">
+            <div class="main">
+                <i class="fa fa-times" onclick="toggleForm();"></i>
+                <div class="imgBx"><img src="./img/img_avatar2.png"></div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Tài khoản</h3>
+                    <input type="text" placeholder="Nhập tài khoản" id="username">
+                    <h3>Mật khẩu</h3>
+                    <input type="password" placeholder="Nhập mật khẩu" id="password">
+                    <button id="signin" onclick="formSignin();">Đăng nhập</button>
+                    <input type="checkbox"> Nhớ tài khoản
+                    <br>
+                    <button class="cancle" onclick="toggleForm();">Hủy Bỏ</button>
+                    <a href="#">Quên mật khẩu?</a>
+            </div>
+            </form>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
