@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #333;
+}
+header #navigation{
+    display: flex;
+}
+header #navigation li{
+    list-style: none;
+}
+header #navigation li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: 300;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header #navigation li a:hover{
+    background: #f2f2f2;
+    color: #000;
+}
+header .search{
+    margin: 15px;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+header .search input{
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 1.3em;
+    width: 100%;  
+}
+header .search .fa{
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.content{
+    position: relative;
+    font-size: 1.75em;
+}
+.content h2{
+    margin-bottom: 10px;
+}
+.content button{
+    font-size: 18px;
+    margin: 10px 5px;
+    padding: 2px;
+    cursor: pointer;
+    z-index: 1;
+}
+section{
+    display: none;
+}
+section.active{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.active .user{
+    position: relative;
+    max-width: 500px;
+    min-height: 500px;
+    background: #fff;
+    box-shadow: 0px 0px 0px 1500px rgba(0,0,0,0.5);
+    z-index: 2;
+}
+section.active .user .main{
+    position: relative;
+    display: flex;
+    top: 10px;
+    left: 0px;
+}
+section.active .user .main .fa{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    top: 0;
+    right: 5px;
+    font-size: 1.2em;
+}
+section.active .user .imgBx{
+    position: relative;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 150px;    
+    top: 20px;
+}
+section.active .user .imgBx img{
+    position: absolute;
+    width: 100%;
+}
+section.active .formBx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+section.active .formBx input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+section.active .formBx button{
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px 5px;
+    padding: 2px;
+}
+section.active .formBx input[type="checkbox"]{
+    position: relative;
+    max-width: 20px;
+}
+section.active .formBx .cancle{
+    position: relative;
+    background: #e77e49;
+    padding: 5px 15px;
+    margin-top: 40px;
+}
+section.active .formBx a{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+body.active{
+    background: #fff;
+}
