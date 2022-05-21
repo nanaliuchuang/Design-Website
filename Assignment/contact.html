@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tram Anh's Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="index.html"><img src="./img/logo.png" class="logo"></a>
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <li><i class="fa fa-user-circle-o" aria-hidden="true" onclick="formclick();"></i>
+                    <span>Đăng nhập/Đăng ký</span>
+                </li>
+                <li><i class="fa fa-shopping-bag" aria-hidden="true" id="cart-icon"></i>
+                    <span>Giỏ hàng</span></a>
+                </li>
+            </div>
+            <div class="cart">
+                <h2 class="cart-title">Giỏ hàng</h2>
+                <div class="cart-content">
+                </div>
+                <div class="total">
+                    <div class="total-title">Tồng tiền: </div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Thanh Toán</button>
+                <i class="fa fa-times" aria-hidden="true" id="close-cart"></i>
+            </div>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="index.html" style="--i:1;">Trang chủ</a></li>
+                <li><a href="menfashion.html" style="--i:2;">Thời trang nam</a></li>
+                <li><a href="womenfashion.html" style="--i:3;">Thời trang nữ</a></li>
+                <li><a href="contact.html" style="--i:4;">Thông tin liên lạc</a></li>
+                <li><a href="shoppingcart.html" style="--i:5;">Thanh Toán</a></li>
+            </ul>
+        </header>
+        <div class="box-address">
+            <div class="lineout">
+                <div class="left-side">
+                    <div class="address detail">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <div class="topic">Địa chỉ</div>
+                        <div class="text-one">Hòa Minh 4, Liên Chiểu</div>
+                        <div class="text-two">Thành phố Đà Nẵng</div>
+                    </div>
+                    <div class="phone detail">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div class="topic">Điện thoại</div>
+                        <div class="text-one"><a href="tel:+84702564669">(+84) 70256 4669</a></div>
+                        <div class="text-two"><a href="tel:+84858775287">(+84) 8587 775 287</a></div>
+                    </div>
+                    <div class="email detail">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <div class="topic">Địa chỉ Email</div>
+                        <div class="text-one">nanaliuchuang@gmail.com</div>
+                        <div class="text-two">lindabrithi@gmail.com</div>
+                    </div>
+                </div>
+            <div class="right-side">
+                <div class="topic-text">Gửi cho chúng tôi một tin nhắn</div>
+                <p>Nếu bạn có ý kiến phản hồi về sản phẩm của chúng tôi</p>
+            <form>
+                <div class="input-box">
+                    <input type="text" placeholder="Điền tên của bạn">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Điền email của bạn">
+                </div>
+                <div class="input-box message-box">
+                    <textarea></textarea>
+                </div>
+                <div class="button">
+                    <input type="button" value="Gửi phản hồi"">
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+        <main>
+            <div class=" boxsingin">
+                    <div class="user singinBx">
+                        <div class="imgBx"><img src="./img/sale.jpg"></div>
+                        <div class="formBx">
+                            <form>
+                                <i class="fa fa-times" onclick="formclick();"></i>
+                                <h2>Đăng nhập</h2>
+                                <input type="text" placeholder="Tên đăng nhập">
+                                <input type="password" placeholder="Mật khẩu">
+                                <input type="submit" value="Đăng nhập" onclick="toggleForm();">
+                                <p class="singup">Bạn chưa có tài khoản? <a href="#" onclick="toggleForm();">Đăng
+                                        ký.</a>
+                                </p>
+                                <button class="cancle" onclick="formclick();">Hủy Bỏ</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="user singupBx">
+                        <div class="formBx">
+                            <form>
+                                <i class="fa fa-times" onclick="formclick();"></i>
+                                <h2>Tạo Tài Khoản</h2>
+                                <input type="text" placeholder="Tên đăng nhập">
+                                <input type="text" placeholder="Địa chỉ Email">
+                                <input type="password" placeholder="Tạo Mật khẩu">
+                                <input type="password" placeholder="Đặt lại Mật khẩu">
+                                <input type="submit" value="Đăng ký" onclick="toggleForm();">
+                                <p class="singup">Bạn đã có tài khoản? <a href="#" onclick="toggleForm();">Đăng
+                                        nhập.</a>
+                                </p>
+                                <button class="cancle" onclick="formclick();">Hủy Bỏ</button>
+                            </form>
+                        </div>
+                        <div class="imgBx"><img src="./img/set1.jpg.png"></div>
+                    </div>
+                </div>
+                </main>
+                <footer>
+                    <p class="coppyText">&copy;All Right Reversed - Design by Nanaliuchuang</p>
+                    <div class="sci">
+                        <li><a href="#" style="--i:6;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#" style="--i:7;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#" style="--i:8;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    </div>
+                </footer>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

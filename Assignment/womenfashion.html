@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tram Anh's Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="index.html"><img src="./img/logo.png" class="logo"></a>
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <li><i class="fa fa-user-circle-o" aria-hidden="true" onclick="formclick();"></i>
+                    <span>Đăng nhập/Đăng ký</span>
+                </li>
+                <li><i class="fa fa-shopping-bag" aria-hidden="true" id="cart-icon"></i>
+                    <span>Giỏ hàng</span></a>
+                </li>
+            </div>
+            <div class="cart">
+                <h2 class="cart-title">Giỏ hàng</h2>
+                <div class="cart-content">
+                </div>
+                <div class="total">
+                    <div class="total-title">Tồng tiền: </div>
+                    <div class="total-price">0</div>
+                </div>
+                <button type="button" class="btn-buy">Thanh Toán</button>
+                <i class="fa fa-times" aria-hidden="true" id="close-cart"></i>
+            </div>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="index.html" style="--i:1;">Trang chủ</a></li>
+                <li><a href="menfashion.html" style="--i:2;">Thời trang nam</a></li>
+                <li><a href="womenfashion.html" style="--i:3;">Thời trang nữ</a></li>
+                <li><a href="contact.html" style="--i:4;">Thông tin liên lạc</a></li>
+                <li><a href="shoppingcart.html" style="--i:5;">Thanh Toán</a></li>
+            </ul>
+        </header>
+        <div class="focus">
+            <div class="shop container">
+                <div class="shop-content">
+                    <div class="product-box">
+                        <a href="product.html"><img src="./img/1.png" class="product-img" ></a>
+                        <h2 class="product-title">Đầm ngang vai</h2>
+                        <span class="price">Vnd 487.000</span>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product-box">
+                        <a href="product.html"><img src="./img/2.png" class="product-img" ></a>
+                        <h2 class="product-title">chân váy khóa kéo</h2>
+                        <span class="price">Vnd 377.000</span>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product-box">
+                        <a href="product.html"><img src="./img/3.png" class="product-img" ></a>
+                        <h2 class="product-title">Boot ren</h2>
+                        <span class="price">Vnd 487.000</span>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product-box">
+                        <a href="product.html"><img src="./img/3.png" class="product-img" ></a>
+                        <h2 class="product-title">Quần ống suông</h2>
+                        <span class="price">Vnd 558.000</span>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product-box">
+                        <a href="product.html"><img src="./img/5.png" class="product-img" ></a>
+                        <h2 class="product-title">Set sơ mi vay ngắn</h2>
+                        <span class="price">Vnd 787.000</span>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product-box">
+                        <a href="product.html"><img src="./img/6.png" class="product-img" ></a>
+                        <h2 class="product-title">Sock-fit-boot</h2>
+                        <span class="price">Vnd 546.000</span>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product-box">
+                        <a href="product.html"><img src="./img/7.jpg" class="product-img" ></a>
+                        <h2 class="product-title">Đồ len</h2>
+                        <span class="price">Vnd 649.000</span>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product-box">
+                        <a href="product.html"><img src="./img/8.png" class="product-img" ></a>
+                        <h2 class="product-title">Đông phục Korean</h2>
+                        <span class="price">Vnd 849.000</span>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <main>
+            <div class="boxsingin">
+                <div class="user singinBx">
+                    <div class="imgBx"><img src="./img/sale.jpg"></div>
+                    <div class="formBx">
+                        <form>
+                            <i class="fa fa-times" onclick="formclick();"></i>
+                            <h2>Đăng nhập</h2>
+                            <input type="text" placeholder="Tên đăng nhập">
+                            <input type="password" placeholder="Mật khẩu">
+                            <input type="submit" value="Đăng nhập" onclick="toggleForm();">
+                            <p class="singup">Bạn chưa có tài khoản? <a href="#" onclick="toggleForm();">Đăng
+                                    ký.</a>
+                            </p>
+                            <button class="cancle" onclick="formclick();">Hủy Bỏ</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="user singupBx">
+                    <div class="formBx">
+                        <form>
+                            <i class="fa fa-times" onclick="formclick();"></i>
+                            <h2>Tạo Tài Khoản</h2>
+                            <input type="text" placeholder="Tên đăng nhập">
+                            <input type="text" placeholder="Địa chỉ Email">
+                            <input type="password" placeholder="Tạo Mật khẩu">
+                            <input type="password" placeholder="Đặt lại Mật khẩu">
+                            <input type="submit" value="Đăng ký" onclick="toggleForm();">
+                            <p class="singup">Bạn đã có tài khoản? <a href="#" onclick="toggleForm();">Đăng
+                                    nhập.</a>
+                            </p>
+                            <button class="cancle" onclick="formclick();">Hủy Bỏ</button>
+                        </form>
+                    </div>
+                    <div class="imgBx"><img src="./img/set1.jpg.png"></div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <p class="coppyText">&copy;All Right Reversed - Design by Nanaliuchuang</p>
+        <div class="sci">
+            <li><a href="#" style="--i:6;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" style="--i:7;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#" style="--i:8;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </div>
+    </footer>
+    <img src="./img/wonmen.png" class="women">
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
